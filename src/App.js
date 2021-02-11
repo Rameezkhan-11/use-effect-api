@@ -40,7 +40,9 @@ getRepo()
 
     {repo.map((obj1,ind)=>{
 
-return(<li key={ind}>{obj1.url}</li>)
+return(
+
+<li key = {ind}><a href = {obj1.clone_url}> {obj1.clone_url}<br /></a> </li>)
 
 
 })}
